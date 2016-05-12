@@ -1,7 +1,93 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
 body {
     background-color: #ddd;
 }
 
-div {
-    border: thin solid #333;
+header {
+    background-image: url('/img/first-background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    height:735px;
+    /* image is not scaling - why? */
+}
+
+header > section {
+    padding-top: 6em;
+    text-align: center;
+    color: #ddd;
+    font-weight: 100;
+    letter-spacing: 0.02em;
+}
+
+header > section > h1 {
+    font-size: 3em;
+    font-weight: 100;
+}
+
+header > section > p {
+    font-size: 1.5em;
+}
+
+header > section > button {
+    font-size: 1.5em;
+    padding: 1em;
+    border: none;
+    border-radius: 9px;
+    background-color: #e36a07;
+}
+
+.content {
+    width: 970px;
+    margin: 0px auto;
+}
+
+.top-navigation {
+    background-color: #fff;
+}
+
+.top-navigation > .content {
+    height: 70px;
+    padding: 15px 25px;
+}
+
+.top-navigation .logo {
+    width: 26px;
+}
+
+.top-navigation .links  {
+    margin: 0px;
+    padding: 10px 0px;
+    float:right;
+}
+
+.top-navigation .links >li {
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    -webkit-font-smoothing: antialiased;
+    margin-left: 30px;
+}
+
+.top-navigation .links >li.active {
+    color: #4c5058;
+    font-weight: 500;
+}
+
+.top-navigation .links > li > a {
+    transition: color 0.5s ease;
+    text-decoration: none;
+    color: #838994;
+}
+
+.top-navigation .links >li >a:hover {
+    color: #4c5058;
 }
