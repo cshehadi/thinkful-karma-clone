@@ -7,10 +7,21 @@ html {
 }
 
 body {
-    background-color: #ddd;
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
+
+h1 {
+    font-size: 3em;
+    font-weight: 300;
+    margin: 7rem 0 0;
+}
+
+h3 {
+    font-size: 1.5em;
+    font-weight: 300;
+}
+
 
 header {
     background-image: url('/img/first-background.jpg');
@@ -26,17 +37,6 @@ header > section {
     color: #fff;
     font-weight: 100;
     letter-spacing: 0.02em;
-}
-
-header > section > h1 {
-    font-size: 3em;
-    font-weight: 300;
-    margin: 7rem 0 0;
-}
-
-header > section > h3 {
-    font-size: 1.5em;
-    font-weight: 100;
 }
 
 header > section > button {
@@ -98,4 +98,40 @@ header > section > button:hover {
 
 .top-navigation .links >li >a:hover {
     color: #4c5058;
+}
+
+.icon-section {
+    text-align: center;
+}
+
+.icon-list {
+    margin-top: 3rem;
+    padding: 0px;
+}
+
+.icon-list > li {
+    display: inline-block;
+    margin-left: 2em;
+    margin-right: 2em;
+    list-style: none;
+    text-align: center;
+    width: 175px;
+}
+
+.icon-list > li > icon {
+    width: 125px;
+    height: 125px;
+    display: inline-block;
+}
+
+.icon-devices {
+    background-image: url('/img/icon-devices.svg');
+}
+
+.icon-coffee {
+    background-image: url('/img/icon-coffee.svg');
+}
+
+.icon-refill {
+    background-image: url('/img/icon-refill.svg');
 }
