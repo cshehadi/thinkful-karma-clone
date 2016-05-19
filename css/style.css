@@ -18,14 +18,14 @@ h1 {
 }
 
 h2 {
-    font-size: 2.5rem;
+    font-size: 2.75rem;
     font-weight: 300;
     margin: 7rem 0 0;
 }
 
 h3 {
     font-size: 1.5em;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 
@@ -69,6 +69,7 @@ header > section > button:hover {
     position: fixed;
     width: 100%;
     z-index: 9999;
+    border-bottom: thin solid #ccc;
 }
 
 .top-navigation > .content {
@@ -111,10 +112,12 @@ header > section > button:hover {
 
 .cases {
     text-align: center;
+    padding-bottom: 6rem;
 }
 
 .icon-list {
-    margin-top: 3rem;
+    width: 706px;
+    margin: 3rem auto 0;
     padding: 0px;
 }
 
@@ -143,4 +146,40 @@ header > section > button:hover {
 
 .icon-refill {
     background-image: url('/img/icon-refill.svg');
+}
+
+footer {
+    height: 300px;
+    text-align: center;
+    border-top: thin solid #eee;
+}
+
+footer ul {
+    padding: 0;
+    list-style: none;
+}
+
+footer ul > li {
+    height: 40px;
+    width: 40px;
+    margin: 0 5px;
+    padding-top: 10px;
+    display: inline-block;
+    border: thin solid #eee;
+    border-radius: 20px;
+}
+
+.fa-twitter {
+    color: #55acee;
+}
+.fa-facebook {
+    color: #4c66a4;
+}
+.fa-instagram {
+    color: #3f729b;
+}
+.copyright {
+    color: #999;
+    font-size: .9rem;
+    font-weight: 300;
 }
